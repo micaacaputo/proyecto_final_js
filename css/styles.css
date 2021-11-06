@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+/*HEADER*/
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    border-bottom: 2px solid #fff;
+    background-color: #000;
+}
+.shop {
+    font-size: 2.2rem;
+    color: #fa3434;
+    margin-right: -4rem;
+}
+
+#logo__boton-carrito {
+        color: #fa3434;
+        background-color: #000;
+        border: none;
+        margin-top: 1rem;
+}
+
+
+/*CARRITO*/
+.imagen {
+    width: 10%;
+}
+.modal-body h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+}
+
+.agregarProducto{
+    color: #fff;
+    font-size: 1.1rem;
+}
+.agregarProducto p{
+    font-family:'Roboto Condensed', sans-serif;
+}
+.precio{
+    font-family:'Roboto Condensed', sans-serif;
+    font-size: 1.25rem;
+}
+.logo__imagen-modal{
+    height: 2.5rem;
+    padding-right: 1rem;
+}
+
+/*BODY*/
+#fondo {
+    padding-bottom: 2rem;
+    background-color: #000;
+}
+#contenedor-bootstrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#contenedor-bootstrap2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#intro-mangas {
+    background-image: url(../img/equipo7chico.png);
+    background-color: #fff;
+    height: 260px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#intro-figuras {
+    background-image: url(../img/Coleccion-de-Figuras.jpg);
+    background-color: #fff;
+    height: 260px;
+    background-size: contain;
+    background-repeat: repeat;
+}
+#intro-accesorios {
+    background-image: url(../img/llaveros2.jpg);
+    background-color: #fff;
+    height: 260px;
+    background-size: contain;
+    background-repeat: repeat;
+}
+#titulo__seccion, #titulo__seccion2, #titulo__seccion3, #titulo__seccion4 {
+    margin: auto;
+    border-top: 2px solid #fff;
+    border-bottom: 3px solid #fff;
+    background-color: #000;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3.1rem;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+#opcionesAnimeManga, #opcionesAnimeFiguras{
+    display: inline;
+    text-align: center;
+    border: 1px solid #fa3434;
+    color: #fff;
+    background: #000;
+}
+
+/*FOOTER*/
+.mangakyou__footer {
+    background-color: #fa3434;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    border-top: 1px solid #fff;
+}
+
+.mangakyou__footer ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+  }
+
+.menu__footer {
+    color: #fff;
+    font-family: 'Permanent Marker', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    margin: auto;
+}
+.ajustar__footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.4rem;
+}
+.redes {
+    font-size: 1.7rem; 
+}
+
+.padding {
+    padding-bottom: 1.2rem;
+}
+
+.iconos__footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.iconos__footer li a i{
+    margin-right: 1.5rem;
+}
+
+.style.background{
+    background-color: #fa3434;
+}
+
+/*CONTACTO*/
+.centrar-contacto {
+    margin: 3rem 4rem 2rem 4rem;
+}
+.centrar-boton{
+    display: flex;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+#intro-contacto {
+    background-image: url(../img/kamadogif.gif);
+    background-color: #000;
+    height: 260px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+
+}
+
+/*BUSCADOR*/
+.filter{
+    display: none;
+}
+.searchStyle{
+    font-size: 1rem;
+    background-color: #000 !important;
+    color: #fff !important;
+    border-color: #fa3434;
+    margin-right: 1rem;
+    padding-right: 2.5rem;
+}
+.icon-search{
+    font-size: 1.6rem;
+    color:#fa3434;
+    margin-right: 1rem;
+}

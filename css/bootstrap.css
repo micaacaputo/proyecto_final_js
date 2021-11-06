@@ -1,0 +1,118 @@
+/*Modifico las clases de Bootstrap*/
+
+/*Cards*/
+.card {
+    color: #fff;
+    background-color: #000;
+    border-radius: .25rem;
+    text-align: center;
+    transition: 0.5s;
+    position: relative;
+    display: flex;
+    border-radius: .25rem;
+    border: 3px double #fff;
+}
+.card:hover{
+    box-shadow: 5px 5px 5px #fa3434;
+    transform:scale(1.1);
+}
+.card-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.3rem;
+}
+.card-text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5rem;
+}
+
+.text-white{
+    font-size: 1.5rem;
+}
+.card {
+    width: 15rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1.5px solid #fa3434;
+}
+.container p{
+    color: #fff;
+}
+
+/*Boton*/
+#boton-bootstrap{
+    background-color: transparent;
+    margin-right: 4rem;
+}
+.btn:focus{
+    box-shadow: 0 0 0 0;
+   
+}
+
+/*Modal*/
+#exampleModalLabel{
+    font-family:'Permanent Marker', cursive;
+    font-size: 2rem;
+    color: #fa3434;
+}
+.modal-content{
+    border: 1px solid #fa3434;
+    background-color: #000;
+}
+
+.modal-footer p{
+    color: #fff;
+    margin-right: 3rem;
+}
+.close {
+    color: #fff ;
+}
+.close:hover{
+    color: red;
+}
+.separador{
+    background-color: #fa3434;
+}
+
+.estilo{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.4rem;
+}
+#efectivo{
+    margin-left: 4rem;
+    height: 4rem;
+    width: 8rem;
+}
+#tarjeta{
+    margin-left: 4rem;
+    height: 4rem;
+    width: 8rem;
+}
+
+#mensajeCompra{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*Navbar*/
+.navbar{
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    margin-right: 5rem;
+    font-size: 1.3rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.navbar-dark:hover .navbar-nav:hover .nav-link:hover{
+    color: #fa3434;
+    transition: .3s;
+}
+.navbar-brand{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.2rem;
+    color: red;
+    margin-left: 4rem;
+}

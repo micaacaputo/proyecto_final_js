@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Mangakyou</title>
+    </head>
+
+    <body>
+        <header class= "header">
+
+            <nav class="navbar d-flex justify-content-center navbar-expand-lg navbar-dark">
+              <a class="navbar-brand Home" href="#">
+                  <img src="../img/logo.png" width="45" height="45" class="d-inline-block align-top " alt="">
+                  Mangakyou
+                </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse text-center navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link Mangas" href="#">Mangas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link Figuras" href="#">Figuras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link Contacto" href="#">Contacto</a>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <i class="fas fa-search icon-search"></i>
+                  <input class="form-control mr-sm-2 search searchStyle" type="search" id= "search" placeholder="Buscar..." aria-label="Search">
+                </form>
+                <button type="button" id= "boton-bootstrap" class="btn" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fas fa-shopping-bag shop"></i>
+                </button>
+              </div>
+            </nav>
+        </header>
+
+    <main>
+
+      <div id="intro-mangas"></div>
+
+        <div id= "fondo">
+            <div id="titulo__seccion">Mangas</div>
+
+            <section class="container">
+                <div id ="contenedor-bootstrap">
+                    
+                </div>
+            </section>
+            
+      <div id="intro-figuras"></div>
+            <div id="titulo__seccion2">Figuras</div>
+            
+            <section class = "container">
+                <div id ="contenedor-bootstrap2">    
+                </div>
+            </section>
+
+            <section class="container">
+                <div id ="contenedor-bootstrap3">
+                    
+                </div>
+            </section>
+             
+      <div id="intro-contacto"></div>
+            <div id="titulo__seccion4">Contacto</div>
+                <form id= "formulario">
+              <div class="centrar-contacto">
+                  <div class="form-group">
+                    <label for="exampleFormControlInput" class="text-white estilo">Nombre</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Escriba su nombre...">
+                  </div>
+                  <form>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput" class="text-white estilo">Mail</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Escriba su mail...">
+                    </div>
+                  </form>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1" class="text-white estilo">Dejanos tu comentario</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba su comentario..."></textarea>
+                  </div>
+                </form>
+            </div>
+              <div class = "centrar-boton">
+                <button type="submit" id="boton-enviar" class="btn btn-outline-danger mx-auto" data-toggle="modal" data-target="#exampleModal2">Enviar</button>
+              </div>
+        </div>
+    </main>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"><img src="img/logo.png" class="logo__imagen-modal" alt="">Anime Cart</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" id = "contenedor-carrito">
+                </div>
+                <div class="modal-footer">
+                    <p class="precio">Precio total: $<span id="precioTotal">0</span></p>
+                    <button id="comprar" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal3">Iniciar compra</button>
+                    <button id="vaciar" class="btn btn-danger">Vaciar Carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"><img src="img/logo.png" class="logo__imagen-modal" alt="">Finalizar compra</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" id = "contenedor-compra">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"><img src="img/logo.png" class="logo__imagen-modal" alt="">Mangakyou</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" id = "contenedor-formulario">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        
+        <footer>
+            <div class= "mangakyou__footer">
+          
+                <ul>
+                    <p class= "menu__footer">Mangakyou</p>
+                    <li><a href="#" class= "ajustar__footer Home">Home</a>
+                        <li><a href= "#" class= "ajustar__footer Mangas">Mangas</a>
+                            <li><a href= "#" class= "ajustar__footer Figuras">Figuras</a>
+                    <li><a href= "#" class= "ajustar__footer Contacto">Contacto</a>
+                 </ul>
+                            
+                 <ul>
+                  <p class= "menu__footer padding"> Redes</p>
+                      <div class="iconos__footer">
+                          <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f redes"></i></a></li>
+                          <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram redes"></i></a></li>
+                          <li><a href="https://www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp redes"></i></a></li>
+                      </div>
+              </ul>
+            </div>
+           </footer>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/formulario.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/busquedaPorAnime.js" type="module"></script>
+    <script src="js/buscador.js" type="module"></script>
+    </body>
+</html>
